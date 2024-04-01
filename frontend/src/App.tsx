@@ -30,6 +30,8 @@ function App() {
   const { wallet } = useWallet();
   const { assets } = useAssets();
   const { addAssets } = useAddAssets();
+  const myWallet = new WalletLocked("fuel1n9n04nzjv7qrta79e0gkr7gtg96rkdyeah5a85p0zeesmh4ewptqe6cgap");
+console.log("WALLET:", myWallet.address.toB256());
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
